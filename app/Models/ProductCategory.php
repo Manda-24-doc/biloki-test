@@ -12,7 +12,7 @@ class ProductCategory extends Model
     use HasFactory;
 
     protected $table = 'products_categories';
-    protected $fillable = ['name', 'description'];
+    protected $fillable = ['name', 'description', 'image'];
 
     public function products(): HasMany
     {
